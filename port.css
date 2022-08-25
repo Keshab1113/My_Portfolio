@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.sidebar{
+    background-color: rgb(138, 130, 130);
+    width: 15vw;
+    font-family: 'Ubuntu', sans-serif;
+    height: 120vh;
+}
+.main{
+    /* background-color: rgb(181, 188, 194); */
+    /* background-color: #C1EFFF; */
+    width: 90%;
+    font-family: 'Ubuntu', sans-serif;
+}
+.container{
+    display: flex;
+}
+.sidebar nav{
+    padding: 45px;
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 25px;
+    padding: 33px 0;
+}
+.infocontainer{
+    /* background-color:rgb(146, 158, 168) ; */
+    /* height: 75vh; */
+    /* width: 150vh; */
+    
+    height: 75%;
+    width: 100%;
+    margin: 80px auto;
+    display: flex;
+    justify-content:center;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+.devpic img{
+    width: 30%;
+    height: auto;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    border-radius: 100%;
+    /* padding: 31px 120px 0px 0px; */
+    float: right;
+    margin: 20px 420px 0px 70px;
+    /* background-size:inherit; */
+}
+.hello h1{
+    padding: 10px 400px;
+    
+}
+.hello h3{
+    padding: 0px 198px;
+    
+}
+.buttons button{
+    color: azure;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px -450px 0px 460px;
+    /* margin: 10px -145px -10px 150px; */
+}
+.buttons button:hover{
+    background-color: rgb(216, 209, 209);
+    color: rgb(12, 70, 70);
+    cursor: pointer;
+}
+.sidebar nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+@media (max-width: 1250px) {
+    .devpic{
+        display: none;
+    }
+}
+@media (max-width: 500px) {
+    /* *{
+        background-color: #C1EFFF;;
+    } */
+    
+    .sidebar{
+        transform: translate(-440px, 0px);
+        position: absolute;
+    }
+    .buttons button{
+        /* transform: translate(+100px, 100px,140px,140px);
+        position: absolute; */
+        padding: 0;
+    }
+} 
+.wall{
+    position: absolute;
+   z-index: -1;
+   height: 123%;
+   width: 100%;
+   
+}
